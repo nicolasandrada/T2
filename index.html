@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="">
+        <div>
+            <h1>Athar</h1>
+            <p>Calsados como la gente</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Catalogo</a></li>
+            <li><a href="">Sistema</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="">
+            <div>
+                <h3>Nombre del Empleado</h3>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+
+            <div>
+                <h3>Sector</h3>
+                <select name="sector" id="sector">
+                    <option value="costura">Costura</option>
+                    <option value="corte">Corte</option>
+                    <option value="pegado">Pegado</option>
+                    <option value="embalaje">Embalaje</option>
+                </select>
+            </div>
+
+            <div class="Produccion">
+                <h3>Produccion Semanal</h3>
+                <label for="lunes">Lunes</label>
+                <input type="number" name="prod[]" id="lunes">
+                <label for="martes">Martes</label>
+                <input type="number" name="prod[]" id="martes">
+                <label for="miercoles">Miercoles</label>
+                <input type="number" name="prod[]" id="miercoles">
+                <label for="jueves">Jueves</label>
+                <input type="number" name="prod[]" id="jueves">
+                <label for="viernes">Viernes</label>
+                <input type="number" name="prod[]" id="viernes">
+            </div>
+
+            <div>
+                <h3>Adelanto</h3>
+                <input type="number" name="adelanto" id="adelanto">
+            </div>
+
+            <div>
+                <h3>Antiguedad</h3>
+                <input type='number' name='antiguedad' id="antiguedad">
+            </div>
+
+            <div>
+                <input type="button" value="Calcular" id="calcular">
+            </div>
+
+        </form>
+
+        
+            
+
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
